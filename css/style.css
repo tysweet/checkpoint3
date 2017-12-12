@@ -1,0 +1,112 @@
+/*XL, Large, and Medium Screen Views*/
+
+/*Main HTML Body Styling*/
+body {
+  font-family: 'Emilys Candy', cursive;
+  display: block;
+  margin: auto;
+  text-align: center;
+  background-image: url(/img/med.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Main Heading Style*/
+h1{
+  font-size: 6em;
+  text-align: center;
+}
+
+/*Starting Picture Style with Pseudo-Classes*/
+#bieber {
+  width: 25%;
+  height: auto;
+  display: block;
+  margin: auto;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+#bieber:hover {
+  transform: scale(1.1);
+}
+#bieber:active {
+  transform: scale(1);
+}
+
+/*Running Total Counter Style*/
+#totalFans h2{
+  background-color: white;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+/*Click and Auto-Click Counter Style*/
+#currentTotal {
+  margin: auto;
+  width: 5em;
+  height: 1em;
+  text-align: center;
+  font-size: 6em;
+  background-image: url(/img/hearts2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: bolder;
+}
+
+/*Cash-out Buttons Style*/
+#buttons {
+  display: inline-block;
+  text-align: center;
+}
+.button {
+  margin: 0.4em;
+  padding-top: 1em;
+  font-size: 1.3em;
+  display: inline-block;
+  width: 13em;
+  height: 2em;
+  cursor: pointer;
+  color: white;
+  font-weight: bolder;
+}
+#one {
+  background-color: #fadbd8;
+  color: black;
+}
+#two {
+  background-color: #ec7063;
+}
+#three {
+  background-color: #e74c3c;
+}
+#four {
+  background-color: #922B21;
+}
+
+/*Footer Style*/
+footer {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  color: white;
+}
+
+
+
+/*Small Screen View*/
+@media (min-width: 400px) and (max-width: 582px){
+
+/*Change Heading Size*/
+  h1{
+    font-size: 5em;
+  }
+
+/*Change Click Total Size*/
+  #currentTotal {
+    width: 4em;
+  }
+}
