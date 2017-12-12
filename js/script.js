@@ -2,31 +2,38 @@
 
 $(document).ready(function() {
 
+// Variables for JQuery
   var data = {
     totalNuts:0,
     totalCurrent:0,
     totalFans: 0
   };
 
+// Function Interval Timing
   setInterval(biebs,1000);
 
+// Function to Count Clicks and Update Browser Tab
   function biebs() {
     data.totalNuts += data.totalFans;
     data.totalCurrent += data.totalFans;
+    document.title = ('Beliebers - ' + data.totalCurrent);
     updateReport();
   };
 
+// Function to Update Click Totals and Running Total
   function updateReport() {
     $("#currentTotal").text(Math.floor(data.totalCurrent));
     $("#fans").text((data.totalFans/50).toFixed(1));
   };
 
+// Counter to Save Clicks
   $("#bieber").click(function (){
     data.totalNuts ++;
     data.totalCurrent ++;
     updateReport();
   });
 
+// "Cash-out" Buttons
   $(".button").click(function (){
     var addVal = $(this).data("cost");
     if ($(this).data("cost") < data.totalCurrent) {
@@ -35,6 +42,8 @@ $(document).ready(function() {
       $(this).children("span").html( parseInt($(this).children("span").html()*1.15));
       $(this).data("cost", parseInt($(this).data("cost") * 1.15));
     }
+
+// Changes Picture Based on Total Fans Counter    
     if ((data.totalFans/50) >= '10'){
       $('#bieber').attr('src', './img/bieber2.jpeg').css({"width": "25%", "height": "auto"})
     };
