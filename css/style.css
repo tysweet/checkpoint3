@@ -2,7 +2,7 @@
 
 /*Main HTML Body Styling*/
 body {
-  font-family: 'Emilys Candy', cursive;
+  font-family: 'Emilys Candy';
   display: block;
   margin: auto;
   text-align: center;
@@ -14,7 +14,6 @@ body {
 /*Main Heading Style*/
 h1{
   font-size: 6em;
-  text-align: center;
 }
 
 /*Starting Picture Style with Pseudo-Classes*/
@@ -35,11 +34,12 @@ h1{
 
 /*Running Total Counter Style*/
 #totalFans h2{
-  background-color: white;
+  font-size: 2em;
+  background-color: whitesmoke;
   display: inline-block;
   width: auto;
   height: auto;
-  text-align: center;
+  padding: 0.1em;
 }
 
 /*Click and Auto-Click Counter Style*/
@@ -47,8 +47,7 @@ h1{
   margin: auto;
   width: 5em;
   height: 1em;
-  text-align: center;
-  font-size: 6em;
+  font-size: 5em;
   background-image: url(../img/hearts2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,10 +55,6 @@ h1{
 }
 
 /*Cash-out Buttons Style*/
-#buttons {
-  display: inline-block;
-  text-align: center;
-}
 .button {
   margin: 0.4em;
   padding-top: 1em;
@@ -91,7 +86,6 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  text-align: center;
   color: white;
 }
 
