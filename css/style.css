@@ -6,7 +6,7 @@ body {
   display: block;
   margin: auto;
   text-align: center;
-  background-image: url(/img/med.jpg);
+  background-image: url(./img/med.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
